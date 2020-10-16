@@ -18,7 +18,12 @@ class Bank:
 print("Welcome: ",Bank.bankname)
 name=input("Enter name ")
 c=Bank(name)
+<<<<<<< HEAD
 
+name=input("Enter name ")
+c=Bank(name)
+=======
+>>>>>>> feature1
 while True:
 	print("select option: Deposit-D/d or Withdraw: W/w or Exit E/e :")
 	option=input("Select Option: D/W ")
@@ -27,12 +32,16 @@ while True:
 		amt=int(input("enter amount: "))
 		c.deposit(amt)
 	
+<<<<<<< HEAD
 	elif option=='W':
 		amt=int(input("enter amount: "))
 		c.withdraw(amt)
 
-        elif option=='E':
+        else:
+=======
+	elif option=='E':
 		print("Thank You:")
 		sys.exit()
 	else:
+>>>>>>> feature1
 		print("invalid Option")
