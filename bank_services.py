@@ -16,3 +16,8 @@ class Bank:
 		self.balance=self.balance-amt
 		print(amt," deducted from account ", " the remaining balance is: ", self.balance)
 print("Welcome: ",Bank.bankname)
+name=input("Enter name ")
+c=Bank(name)
+
+print("select option: Deposit-D/d or Withdraw: W/w or Exit E/e :")
+#	option=input("Select Option: D/W ")
