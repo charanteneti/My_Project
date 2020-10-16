@@ -25,9 +25,12 @@ while True:
 	if option=='D':
 		amt=int(input("enter amount: "))
 		c.deposit(amt)
+  elif option=='W':
+		amt=int(input("enter amount: "))
+		c.withdraw(amt)
 	
-	elif option=='E':
+  elif option=='E':
 		print("Thank You:")
 		sys.exit()
-	else:
+  else:
 		print("invalid Option")
