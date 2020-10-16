@@ -18,6 +18,16 @@ class Bank:
 print("Welcome: ",Bank.bankname)
 name=input("Enter name ")
 c=Bank(name)
-
-print("select option: Deposit-D/d or Withdraw: W/w or Exit E/e :")
-#	option=input("Select Option: D/W ")
+while True:
+	print("select option: Deposit-D/d or Withdraw: W/w or Exit E/e :")
+	option=input("Select Option: D/W ")
+	
+	if option=='D':
+		amt=int(input("enter amount: "))
+		c.deposit(amt)
+	
+	elif option=='E':
+		print("Thank You:")
+		sys.exit()
+	else:
+		print("invalid Option")
